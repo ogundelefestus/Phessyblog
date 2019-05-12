@@ -107,7 +107,7 @@ class Posts extends CI_Controller
 
 }
 
-
+//this is codeigneter blog
 
 
 
