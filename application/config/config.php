@@ -35,7 +35,7 @@ $config['base_url'] = 'https://radiant-escarpment-48091.herokuapp.com/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'views/pages/home.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
