@@ -1,13 +1,7 @@
-
-<IfModule mod_rewrite.c>
-RewriteEngine On 
- 
-RewriteBase /ciblog/
-RewriteCond $1 !^(index\.php|assets|images|js|css|uploads|favicon.png)
-RewriteCond %(REQUEST_FILENAME) !-f
-RewriteCond %(REQUEST_FILENAME) !-d
-RewriteRule ^(.*)$ ./index.php/$1[l]
-</IfModule>
-<IfModule !mod_rewrite.c>
-    ErrorDocument 404 index.php
- </IfModule>
+RewriteEngine on
+RewriteBase  /
+Rewritecond %{REQUEST_URL} ^/system. *
+RewriteRule ^(.*)$ index.php?/$1 [1]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !_d
+RewriteeRule ^(.*)$ index.php?/$1[L]
